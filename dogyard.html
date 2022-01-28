@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoit"content="with=device-with,nitial-scale=1.0">
+
+     <title>Dog Yard</title> 
+     <link rel="stylesheet" type="text/css" href="dogsale.css">
+
+    </head>
+    <body>
+     <center>
+        <h1><b><i>Dog Yard!!!</i></b></h1>
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"> 1 / 6 </div>
+      <img src="doga.jpg" width="50%"height="30%">
+      <div class="text"> Caption One </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"> 2 / 6 </div>
+      <img src="rex.jpg" width="50%"height="30%">
+      <div class="text"> Caption Two </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="wat.jpg" width="50%"height="30%">
+      <div class="text"> Caption Three </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="lucky.jpg" width="50%"height="30%">
+        <div class="text"> Caption Four </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="sport.jpg" width="50%"height="30%">
+        <div class="text"> Caption Five </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="danger.jpg" width="50%"height="30%">
+        <div class="text"> Caption Six </div>
+      </div>
+</center>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)" style="margin-left: 3cm; background-color: green;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="margin-right: 3cm; background-color: green; ">&#10095;</a>
+  </div>
+
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"> </span>
+    <span class="dot" onclick="currentSlide(2)"> </span>
+    <span class="dot" onclick="currentSlide(3)"> </span>
+    <span class="dot" onclick="currentSlide(4)"> </span>
+    <span class="dot" onclick="currentSlide(5)"> </span>
+    <span class="dot" onclick="currentSlide(6)"> </span>
+
+  </div>
+  <br>
+<center>
+  <div class="dogyard">
+      <p><i><b style="font-size: 20;font-family: 'Times New Roman', Times, serif;">
+        For only $15 get yourself a mans bestfriend that can also protect you at night...
+      </b></i></p>
+    
+  </div>
+</center>
+
+  <br>
+  <div class="dogsale" style="background-color: black;">
+    <p style="background-color: white; width: 5cm;font-weight: bold;">Location: 213 Fred Jamson</p>
+    <p style="background-color: white; width: 8cm;font-weight: bold;">SMS/Whatsapp: +263 773 654 073 
+        <p style="background-color: white; width: 8cm;font-weight: bold;">email: denzelmsusa@gmail.com</p>
+</p>
+   
+  </div>
+
+  <br>
+
+
+
+  <script type="text/javascript">
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+  </script>
+
+
+    </body>
